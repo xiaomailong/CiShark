@@ -56,3 +56,5 @@ target/
 # ignore tool directory, let user downloads itself
 tools/
 
+# vim intermedia file
+*~

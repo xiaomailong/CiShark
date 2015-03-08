@@ -126,7 +126,7 @@ def init_series_type_dict():
     values = cursor.fetchall()
     series_type_dict = dict(values)
     #print(series_type_dict)
-    #print(series_type_dict['series_primary'])
+    #print(series_type_dict['series_master'])
 
 def init_cpu_type_dict():
     """
@@ -139,7 +139,7 @@ def init_cpu_type_dict():
     values = cursor.fetchall()
     cpu_type_dict = dict(values)
     #print(cpu_type_dict)
-    #print(cpu_type_dict['cpu_primary'])
+    #print(cpu_type_dict['cpu_master'])
 
 def init_switch_type_dict():
     """
@@ -152,7 +152,7 @@ def init_switch_type_dict():
     values = cursor.fetchall()
     switch_type_dict = dict(values)
     #print(switch_type_dict)
-    #print(switch_type_dict['primary_to_check'])
+    #print(switch_type_dict['master_to_check'])
 
 def get_log_type(enum_name):
     if len(log_type_dict) <= 0:
@@ -187,7 +187,7 @@ def get_switch_type_id(type_str):
 if __name__ == "__main__":
     #init_log_type_dict()
     #init_series_type_dict()
-    #get_cpu_state_id("cpu_primary")
+    #get_cpu_state_id("cpu_master")
     #init_switch_type_dict()
     check_partition_table_day()
     check_partition_table_month()
