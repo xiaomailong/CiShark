@@ -52,3 +52,7 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# ignore tool directory, let user downloads itself
+tools/
+
