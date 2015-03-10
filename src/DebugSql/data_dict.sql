@@ -182,16 +182,16 @@ INSERT  INTO `data_dict`(`tb_name`,`fd_name`,`fd_value`,`fd_mean`,`enum_name`,`r
 ('log','log_type',0  ,'tips',                                'tips',                                        'tips'                              ),
 
 ('session','cpu_state',0,'未知状态',                         'cpu_none',                                    '未知状态'                          ),
-('session','cpu_state',1,'主CPU',                            'cpu_primary',                                 '主CPU'                             ),
+('session','cpu_state',1,'主CPU',                            'cpu_master',                                 '主CPU'                             ),
 ('session','cpu_state',2,'从CPU',                            'cpu_slave',                                   '从CPU'                             ),
 ('session','series_state',1,'校核状态',                      'series_check',                                '校核状态'                          ),
 ('session','series_state',0,'停机状态',                      'series_pending',                              '停机状态'                          ),
-('session','series_state',2,'主机状态',                      'series_primary',                              '主机状态'                          ),
-('session','series_state',3,'热备状态',                      'series_spare',                                '热备状态'                          ),
+('session','series_state',2,'主机状态',                      'series_master',                              '主机状态'                          ),
+('session','series_state',3,'热备状态',                      'series_standby',                              '热备状态'                          ),
 
-('session','switch_type',1,'primary_to_check',               'primary_to_check',                            'primary_to_check'                  ),
-('session','switch_type',2,'check_to_spare',                 'check_to_spare',                              'check_to_spare'                    ),
-('session','switch_type',3,'spare_to_primary',               'spare_to_primary',                            'spare_to_primary'                  )
+('session','switch_type',1,'master_to_check',               'master_to_check',                            'master_to_check'                  ),
+('session','switch_type',2,'check_to_standby',              'check_to_standby',                           'check_to_standby'                  ),
+('session','switch_type',3,'standby_to_master',             'standby_to_master',                          'standby_to_master'                )
 
 
 
