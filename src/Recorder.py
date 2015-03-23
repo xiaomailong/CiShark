@@ -67,7 +67,7 @@ class NetUdpRecorder():
 
 if __name__ == "__main__":
     power_on_counter = get_power_on_counter()
-    recorder = NetUdpRecorder(port = 3005)
+    recorder = NetUdpRecorder(port = 3003)
     recorder.do_record()
 
 

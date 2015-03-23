@@ -58,3 +58,4 @@ tools/
 
 # vim intermedia file
 *~
+*.swp
