@@ -50,7 +50,7 @@ class NetUdpRecorder():
         listen a port,and record every thing send to this port
         """
         self.port = port
-        self.host = "192.168.1.100"
+        self.host = "192.168.1.102"
         #self.host = "localhost"
         return
 
