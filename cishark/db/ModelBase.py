@@ -19,8 +19,7 @@ class ModelBase:
         else:
             print(err)
 
-    # TODO 请在这里添加打印语句确保在类内定义静态程序只会被初始化一次
-    print("init ModelBase cursor")
+    # print("init ModelBase cursor")
     cursor = cnx.cursor()
 
     def __init__(self):

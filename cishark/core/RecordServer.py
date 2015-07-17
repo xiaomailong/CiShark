@@ -144,7 +144,7 @@ class RecordServer(socketserver.UDPServer):
         :return:无
         """
         #addr = (socket.gethostname(),port)
-        addr = ("192.168.1.109",port)
+        addr = ("192.168.1.100",port)
         super(RecordServer,self).__init__(addr,RecordRequestHandler)
         print("listen",addr)
 
